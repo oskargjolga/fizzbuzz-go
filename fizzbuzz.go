@@ -1,6 +1,9 @@
-package fizzbuzzgo
+package main
 
-import "strconv"
+import (
+	"fmt"
+	"strconv"
+)
 
 func FizzBuzz(i int) string {
 	var retval string = ""
@@ -14,4 +17,13 @@ func FizzBuzz(i int) string {
 		retval = strconv.Itoa(i)
 	}
 	return retval
+}
+
+func main() {
+	i := 1
+	for i <= 100 {
+		fmt.Println(FizzBuzz(i))
+		i++
+	}
+
 }
